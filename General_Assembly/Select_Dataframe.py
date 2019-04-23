@@ -1,12 +1,36 @@
+import numpy as np
 import pandas as pd
 
+#Create from CSV
 url = "https://raw.githubusercontent.com/justmarkham/DAT8/master/data/u.user"
 sep = "|"
 index_col = "user_id"
 users = pd.read_csv(url,sep, index_col ='user_id')
 
+#Create from Text
+raw_data = {"Column_One": ['Record', 'Record','Record','Record'],
+            "Column_Two": [0,1,2,3]                       
+            }
+Data = pd.DataFrame(raw_data)
+Data = pd.DataFrame(raw_data, columns = ['Column_Two','Column_One'])
+
+
+#add Column
+Data['Coumn_Three'] = ['Record', 'Record','Record','Record']
+Data['Coumn_Four'] = [1,2,3,4]
+
+
+#Reorder columns
+Data = Data[['Coumn_Four', 'Coumn_Three', 'Column_Two','Column_One']]
+
+#Set Index
+Data = Data.set_index('Coumn_Four')
+
+
 users.head(25)
 users.tail(10)
+
+chipo.shape[0] #number of records
 
 chipo.shape[0] #number of records
 chipo.shape[1] #number of columns
