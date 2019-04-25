@@ -1,7 +1,9 @@
-##List is a collection which is ordered and changeable. Allows duplicate members.
-##Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
-##Set is a collection which is unordered and unindexed. No duplicate members.
-##Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.
+##List is a collection which is ordered and changeable. Allows duplicate members. []
+##Tuple is a collection which is ordered and unchangeable. Allows duplicate members. ()
+##Set is a collection which is unordered and unindexed. No duplicate members.{}
+##Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.{}
+
+#codewars.com
 
 my_list = []
 my_list.append(3)
@@ -137,16 +139,3 @@ import pandas as pd
 data =[12, 17, 19, 22, 30, 65]
 df = pd.DataFrame(data)
 print(df.describe())
-
-count  4.000000
-mean   5.000000
-std    2.581989
-min    2.000000
-25%    3.500000
-50%    5.000000
-75%    6.500000
-max    8.000000
-
-
-
-
