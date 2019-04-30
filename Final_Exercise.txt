@@ -1,0 +1,74 @@
+Suppose we flip a fair coin three times. What is the probability of getting three tails in a row?
+1/8
+Fair Coin. Multiply probabilities together .5*.5*.5
+
+
+There's a 30% chance of rain on Saturday and a 45% chance of rain on Sunday. What's the probability that it doesn't rain at all this weekend?
+
+No rain sat .7 * no rain sunday .55
+
+
+Let's play a game. On a fair coin toss, if it lands on heads, you win $500. If it lands on tails, you lose $200. What is the expected value of this game? 
+
+150 = ((500*.5) + (-200*.5))
+
+
+
+Let's play a game. On a fair coin toss, if it lands on heads, you win $500. If it lands on tails, you lose $200. What is the expected value of this game? *
+Binomial - there are only 2 possible outcomes.
+
+
+The mean of [3, 5, 8,10, 15, -23] is 10.5
+The standard deviation of [7, 10, 15, 5] is between 3 and 4
+*The mode of these numbers [1, 3, 3, 6, 4, 2, 2, 3] is an odd number
+The average and the mode of [4, 6, 8, 10, 1] are the same
+
+m = [3, 5, 8,10, 15, -23]
+mean = pd.DataFrame(data = m)
+
+
+s = [7, 10, 15, 5]
+std = pd.DataFrame(data = s)
+
+x = [1, 3, 3, 6, 4, 2, 2, 3]
+mode = pd.DataFrame(data = x)
+
+am = [4, 6, 8, 10, 1]
+avmode = pd.DataFrame(data = am)
+
+mean.describe()
+std.describe()
+mode.mode()
+avmode.describe()
+avmode.mode()
+
+for i in range(10):
+	if i % 2:
+		print(i + 1)
+		
+Prints all the even numbers from 2 to 1000
+
+x = 6
+if x>5:
+	print ("Hello World")
+		
+		
+def magic(a,b,c):
+	if a == b:
+		return c
+	elif a > b:
+		return b
+	else: 
+		return a
+		
+		
+		
+		3 points
+True	4 != 5
+True	bool(0) == False
+False	"ab" in "a beautiful day"
+True	3 not in [1, 7, 5]
+False[1, 5, 7] == [1, 7, 5]
+		
+		
+mv "C:\Users\cody.ringrissler\debug.log.txt" dir/new
