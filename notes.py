@@ -1,19 +1,46 @@
 ##List is a collection which is ordered and changeable. Allows duplicate members. []
-##Tuple is a collection which is ordered and unchangeable. Allows duplicate members. ()
+x = [1, 2, 3]
+x = ["Lord", "of", "the", "Rings"]
+
+#list indexing and slicing
+x[2] #Character at index 2 of x
+x[i:j:k] #Slice of x from i to j with step k
+x.append('string') #append 'string' to the very end
+x.insert(2,'string') #insert string at index 2
+x.remove('string') #remove the first occurrence of string
+sorted(x) #sort x??
+
+
+for x,y in enumerate(l):
+    print(x,y)
+
+
+
+
+##Tuple is a collection which is ordered and unchangeable. Allows duplicate members. An ordered sequence with a fixed number of elements ()
+x = (1, 2, 3)
+x = ("Kirk", "Picard", "Spock")
+
+
+
+
+
+##Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.{} cannot be sliced
+x = {'Mark': 'Twain', 'Apples': 5}
+
 ##Set is a collection which is unordered and unindexed. No duplicate members.{}
-##Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.{}
+
+
+
+
+##functions
+#Rename a remote
+##https://help.github.com/en/articles/renaming-a-remote
+	
+
 
 #codewars.com
 
-my_list = []
-my_list.append(3)
-my_list_2 = my_list
-my_list_2.append(4)
-my_list_3 = my_list_2
-my_list.append(5)
-print(my_list)
-print(my_list_2)
-print(my_list_3)
 
 
 my_list = []
@@ -26,7 +53,9 @@ my_list_2.remove(my_list_2[4])
 print(my_list)
 print(my_list_2)
 
-
+mylist = ["a", "b", "a", "c", "c"]
+mylist = list(dict.fromkeys(mylist))
+print(mylist)
 
 
 my_list = []
